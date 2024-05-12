@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Sorts+Mill+Goudy:ital@0;1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sorts Mill Goudy", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Extra font to use  */
+/* .sorts-mill-goudy-regular-italic {
+    font-family: "Sorts Mill Goudy", serif;
+    font-weight: 400;
+    font-style: italic;
+  } */
+
+
+:root {
+    --main-bg: #1e272e;
+    --main-color: #0097e6;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.row {
+    margin: 0;
+}
+
+.main-menu {
+    background-color: var(--main-bg);
+}
+
+.navbar {
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.navbar li {
+    margin-left: 2rem;
+}
+
+.navbar a {
+    color: #fff;
+    font-size: 1.8rem;
+
+}
+
+.navbar-toggler {
+    background: #fff;
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Main Header */
+
+.main-header-left {
+    height: 44rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-header-left p {
+    font-size: 2rem;
+}
+
+.main-header-left h1 {
+    font-size: 4rem;
+    margin: 1rem 0 3rem 0;
+    text-transform: capitalize;
+}
+
+.main-header-left .text-color {
+    color: var(--main-color);
+}
+
+.main-header-left button {
+    border: none;
+    padding: 0.8rem 1.8rem;
+    font-size: 1.4rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    box-shadow: 0 8px 6px -6px #000;
+    outline: none;
+
+}
+
+.main-header-left button:hover {
+    box-shadow: 0 8px 6px -6px var(--main-color);
+}
+
+.main-header-right {
+    height: 44rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-header-right figure img {
+    filter: drop-shadow(0 0.5rem 1rem rgba(0, 0, 0, 0.3));
+}
+
+/* temp input details */
+
+.temp-form {
+    width: 60%;
+    position: relative;
+    margin: 4rem auto 3rem;
+}
+
+.temp-form input[type="text"] {
+    width: 100%;
+    padding: 2rem 5rem 2rem 2rem;
+    background: #1e202b;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 1.7rem;
+    border-radius: 3rem;
+}
+
+::placeholder {
+    color: #bfc1c8;
+}
+
+.temp-form input[type="submit"] {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: none;
+    background: #009ad8;
+    padding: 0 3rem;
+    border-radius: 3rem;
+    color: white;
+    font-size: 1.6rem;
+}
+
+.temp-form input[type="submit"] :hover {
+    color: #009ad8;
+    background: #fff;
+}
+
+
+
+/* temp details */
+.tempInformation {
+    width: 40rem;
+    margin: auto;
+    min-height: 20rem;
+    background-color: #323544;
+    border-radius: 1rem;
+    /* padding: 1rem; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.top-layer {
+    width: 100%;
+    height: 20%;
+    background: #2d303d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.top-layer p {
+    color: #fff;
+    font-weight: 300;
+    padding: 2rem;
+    font-size: 1.4rem;
+}
+
+.main-layer {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.main-layer #city-name {
+    padding: 2rem 0;
+    color: #bfc1cd;
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+.main-layer .middle-layer {
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+}
+
+.main-layer .middle-layer p,
+.main-layer .middle-layer .fas {
+    font-size: 6rem;
+    font-weight: 900;
+}
+
+.fas {
+    color: #009ad8;
+}
+
+sup {
+    font-size: 6rem;
+    margin-top: -2rem;
+}
+
+.data-hide {
+    visibility: hidden;
+    transition: all 0.3s linear;
+}
+
+/* Error page style */
+.errimg {
+    width: 44rem;
+    height: 23rem;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    background-color: var(--main-bg);
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: 3rem;
+}
+
+/* Responsive Code */
+
+@media(max-width:768px) {
+    .main-header-left {
+        height: auto;
+        margin: 5rem 0;
+    }
+
+    .main-header-right {
+        height: auto;
+        margin: 3rem 0;
+    }
+
+    .temp-form {
+        width: auto;
+    }
+
+    .tempInformation {
+        width: auto;
+    }
+
+    .main-layer .middle-layer p,
+    .main-layer .middle-layer .fas {
+        font-size: 6rem;
+        font-weight: 900;
+    }
+}
